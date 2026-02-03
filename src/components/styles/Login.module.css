@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  /* background: linear-gradient(135deg, #c40cd8 0%, #f5576c 100%); */
+  background-color: lightslategray;
   color: white;
   font-family: 'Arial', sans-serif;
   padding: 20px;
@@ -29,7 +30,7 @@
 }
 
 .btn:hover {
-  background: #26d0ce;
+  background: #13eb29;
   transform: translateY(-2px);
 }
 
