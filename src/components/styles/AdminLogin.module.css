@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  background: linear-gradient(135deg, #5e05a6 0%, #fed6e3 100%);
   font-family: 'Arial', sans-serif;
 }
 
 .form {
-  background: white;
+  background: burlywood;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   width: 100%;
   max-width: 400px;
   text-align: center;
@@ -33,10 +33,10 @@
 }
 
 .btn {
-  width: 100%;
+  width: 25%;
   padding: 12px;
-  background: #ff6b6b;
-  color: white;
+  background: #f0f2f3;
+  color: rgb(5, 0, 12);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -46,7 +46,7 @@
 }
 
 .btn:hover {
-  background: #ff5252;
+  background: #b9e40d;
 }
 
 @media (max-width: 768px) {
