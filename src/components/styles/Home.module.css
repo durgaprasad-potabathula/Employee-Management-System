@@ -1,11 +1,14 @@
-.container {
+*{
+  margin: 0;
+}.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f32d1 0%, #e80606 100%);
   color: white;
   font-family: 'Arial', sans-serif;
   text-align: center;
+  
 }
 
 .header {
@@ -31,7 +34,8 @@
 
 .loginBtn {
   padding: 15px 30px;
-  background: #ff6b6b;
+  background: black;
+  border-radius: 90%;
   color: white;
   border: none;
   border-radius: 5px;
@@ -63,8 +67,4 @@
     padding: 12px 25px;
     font-size: 16px;
   }
-}
-
-*{
-  margin: 0%;
 }
