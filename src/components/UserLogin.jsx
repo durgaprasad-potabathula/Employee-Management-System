@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import styles from './styles/UserLogin.module.css';
 
 const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
@@ -9,19 +11,33 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
     if (username === 'user' && password === 'user') {
-      setIsAuthenticated(true);
-      setUserRole('user');
-      navigate('/user-dashboard');
+      toast.success('Login successful ✅', {
+        position: 'top-right',
+        autoClose: 2000,
+      });
+
+      setTimeout(() => {
+        setIsAuthenticated(true);
+        setUserRole('user');
+        navigate('/user-dashboard');
+      }, 2000);
     } else {
-      alert('Invalid credentials');
+      toast.error('Invalid credentials ❌', {
+        position: 'top-right',
+        autoClose: 2000,
+      });
     }
   };
 
   return (
     <div className={styles.container}>
+      <ToastContainer />
+
       <form className={styles.form} onSubmit={handleLogin}>
         <h1>User Login</h1>
+
         <input
           type="text"
           placeholder="Username"
@@ -29,6 +45,7 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
           onChange={(e) => setUsername(e.target.value)}
           required
         />
+
         <input
           type="password"
           placeholder="Password"
@@ -36,7 +53,10 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit" className={styles.btn}>Login</button>
+
+        <button type="submit" className={styles.btn}>
+          Login
+        </button>
       </form>
     </div>
   );
