@@ -2,68 +2,107 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); */
-  background: white;
-  color: black;
-  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+
+  /* BORDER + FRAME */
+  border: 3px solid #ddd;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.08);
+  
 }
+
+/* ================= HEADER ================= */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: red;
+  padding: 18px 30px;
+  padding: 16px 24px;
+  background-color: #1f9d55; /* clean green */
+  color: white;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.25);
 }
 
 .header h1 {
   margin: 0;
-    transform: translateX(640px);
-
+  transform: translateX(640px);
+  font-size: 1.8rem;
+  color: white;
+  letter-spacing: 1px;
 }
 
+/* ================= LOGOUT BUTTON ================= */
+
 .logoutBtn {
-  padding: 10px 20px;
+  padding: 10px 22px;
   background: black;
   color: white;
-  border: none;
-  border-radius: 5px;
+
+  /* BORDER */
+  border: 2px solid white;
+  border-radius: 8px;
+
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .logoutBtn:hover {
-  background: #ff5252;
+  background: white;
+  color: black;
+  transform: scale(1.05);
 }
+
+/* ================= MAIN ================= */
 
 .main {
   flex: 1;
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
+/* ================= DETAILS CARD ================= */
+
 .details {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  max-width: 420px;
   margin: 0 auto;
+
+  /* BORDER + CARD EFFECT */
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .details p {
-  margin: 10px 0;
+  margin: 12px 0;
   font-size: 1.1rem;
+  padding-bottom: 6px;
+
+  /* SMALL DIVIDER */
+  border-bottom: 1px solid #eee;
 }
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
+
+  .header h1 {
+    transform: translateX(0);
+  }
+
   .main {
-    padding: 10px;
+    padding: 12px;
   }
+
   .details {
-    padding: 15px;
+    padding: 16px;
   }
 }
