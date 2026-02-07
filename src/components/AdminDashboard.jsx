@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import EmployeeList from './EmployeeList';
 import EmployeeForm from './EmployeeForm';
 import styles from './styles/AdminDashboard.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 
 const AdminDashboard = ({ setIsAuthenticated }) => {
   const [employees, setEmployees] = useState([]);
@@ -57,7 +59,7 @@ const AdminDashboard = ({ setIsAuthenticated }) => {
     setShowForm(false);
   };
 
-  // ✅ UPDATE TOAST
+  //  UPDATE TOAST
   const updateEmployee = (updatedEmployee) => {
     setEmployees(
       employees.map(emp =>
@@ -75,7 +77,7 @@ const AdminDashboard = ({ setIsAuthenticated }) => {
     setShowForm(false);
   };
 
-  // ✅ DELETE TOAST
+  //  DELETE TOAST
   const deleteEmployee = (id) => {
     setEmployees(employees.filter(emp => emp.id !== id));
 
@@ -105,7 +107,7 @@ const AdminDashboard = ({ setIsAuthenticated }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Admin Dashboard</h1>
+        <h1>ADMIN DASHBOARD</h1>
         <button className={styles.logoutBtn} onClick={handleLogout}>
           Logout
         </button>
@@ -123,6 +125,7 @@ const AdminDashboard = ({ setIsAuthenticated }) => {
             setViewEmployee(null);
           }}
         >
+          <FontAwesomeIcon icon={faUserPlus}/>
           Add Employee
         </button>
 
