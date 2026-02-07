@@ -11,7 +11,7 @@
   width: 100%;
   border-collapse: collapse;
   /* background: rgb(162, 19, 19); */
-  background: lightgreen;
+  background: lightblue;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -39,17 +39,17 @@
 }
 
 .table button:first-child {
-  background: #4ecdc4;
+  background: blue;
   color: white;
 }
 
 .table button:nth-child(2) {
-  background: #ffa726;
+  background: #1f9d55;
   color: white;
 }
 
 .table button:last-child {
-  background: #ff6b6b;
+  background: red;
   color: white;
 }
 
