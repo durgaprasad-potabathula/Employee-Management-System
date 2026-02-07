@@ -14,11 +14,11 @@ const UserDashboard = ({ setIsAuthenticated }) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>User Dashboard</h1>
+        <h1>USER DASHBOARD</h1>
         <button className={styles.logoutBtn} onClick={handleLogout}>Logout</button>
       </header>
       <main className={styles.main}>
-        <h2>Your Employee Details</h2>
+        <h2>MY PROFILE</h2><br />
         <div className={styles.details}>
           <p><strong>Name:</strong> {employee.name}</p>
           <p><strong>Email:</strong> {employee.email}</p>
