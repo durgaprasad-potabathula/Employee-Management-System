@@ -3,10 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  /* background: linear-gradient(135deg, #c40cd8 0%, #f5576c 100%); */
-  background-color: lightslategray;
-  color: white;
+  min-height: 94vh;
+  background-color: white;
+  color: black;
   font-family: 'Arial', sans-serif;
   padding: 20px;
 }
