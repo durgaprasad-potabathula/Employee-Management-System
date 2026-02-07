@@ -13,10 +13,7 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
     e.preventDefault();
 
     if (username === 'user' && password === 'user') {
-      toast.success('Login successful ✅', {
-        position: 'top-right',
-        autoClose: 2000,
-      });
+      toast.success('Login successful');
 
       setTimeout(() => {
         setIsAuthenticated(true);
@@ -24,16 +21,22 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
         navigate('/user-dashboard');
       }, 2000);
     } else {
-      toast.error('Invalid credentials ❌', {
-        position: 'top-right',
-        autoClose: 2000,
-      });
+      toast.error('Invalid credentials');
     }
   };
 
   return (
     <div className={styles.container}>
-      <ToastContainer />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
 
       <form className={styles.form} onSubmit={handleLogin}>
         <h1>User Login</h1>
