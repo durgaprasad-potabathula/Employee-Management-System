@@ -4,16 +4,24 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f32d1 0%, #e80606 100%);
-  color: white;
+  background: white;
+  color: black;
   font-family: 'Arial', sans-serif;
   text-align: center;
+  background-image: url("/public/hand-drawn-remote-recruitment-illustration_52683-144094.avif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: top 65px;
   
 }
 
 .header {
   padding: 20px;
   font-size: 2rem;
+  background: black;
+  color: white;
+  height: 50px;
+  font-size: 24px;
 }
 
 .main {
@@ -27,12 +35,14 @@
 
 .description {
   max-width: 600px;
-  margin-bottom: 30px;
+  margin-top: 80px;
   font-size: 1.2rem;
   line-height: 1.6;
+  margin-left: 600px;
 }
 
 .loginBtn {
+  border-radius: 200%;
   padding: 15px 30px;
   background: black;
   border-radius: 90%;
@@ -43,10 +53,10 @@
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 600px;
 }
 
 .loginBtn:hover {
-  background: #ff5252;
   transform: translateY(-2px);
 }
 
