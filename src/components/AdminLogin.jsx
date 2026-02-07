@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from './styles/AdminLogin.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const AdminLogin = ({ setIsAuthenticated, setUserRole }) => {
   const [username, setUsername] = useState('');
@@ -13,10 +15,7 @@ const AdminLogin = ({ setIsAuthenticated, setUserRole }) => {
     e.preventDefault();
 
     if (username === 'admin' && password === 'admin') {
-      toast.success('Admin login successful ✅', {
-        position: 'top-right',
-        autoClose: 2000,
-      });
+      toast.success('Admin login successful');
 
       setTimeout(() => {
         setIsAuthenticated(true);
@@ -24,16 +23,22 @@ const AdminLogin = ({ setIsAuthenticated, setUserRole }) => {
         navigate('/admin-dashboard');
       }, 2000);
     } else {
-      toast.error('Invalid credentials ❌', {
-        position: 'top-right',
-        autoClose: 2000,
-      });
+      toast.error('Invalid credentials');
     }
   };
 
   return (
     <div className={styles.container}>
-      <ToastContainer />
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        draggable
+        theme="colored"
+      />
 
       <form className={styles.form} onSubmit={handleLogin}>
         <h1>Admin Login</h1>
