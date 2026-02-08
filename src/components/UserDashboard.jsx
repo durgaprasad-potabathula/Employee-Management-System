@@ -4,8 +4,8 @@ import styles from './styles/UserDashboard.module.css';
 
 const UserDashboard = ({ setIsAuthenticated }) => {
   const navigate = useNavigate();
-  const employee = { name: 'John Doe', email: 'john@example.com', phone: '123-456-7890', role: 'Developer', salary: 50000 }; // Mock user data
-
+  const employee = { name: 'Arya', email: 'arya@gmail.com', phone: '7845129874', role: 'Developer', salary: 20000 }; // Mock user data
+  
   const handleLogout = () => {
     setIsAuthenticated(false);
     navigate('/');
@@ -24,7 +24,7 @@ const UserDashboard = ({ setIsAuthenticated }) => {
           <p><strong>Email:</strong> {employee.email}</p>
           <p><strong>Phone:</strong> {employee.phone}</p>
           <p><strong>Role:</strong> {employee.role}</p>
-          <p><strong>Salary:</strong> ${employee.salary}</p>
+          <p><strong>Salary:</strong> {employee.salary}</p>
         </div>
       </main>
     </div>
