@@ -12,7 +12,7 @@ const UserLogin = ({ setIsAuthenticated, setUserRole }) => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (username === 'user' && password === 'user') {
+    if (username === 'arya' && password === 'arya') {
       toast.success('Login successful');
 
       setTimeout(() => {
