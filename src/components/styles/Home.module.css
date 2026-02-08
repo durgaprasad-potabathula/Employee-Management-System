@@ -11,8 +11,8 @@
   background-image: url("/public/hand-drawn-remote-recruitment-illustration_52683-144094.avif");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: top 65px;
-  
+  background-position-y: top 69px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -31,10 +31,11 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .description {
-  max-width: 600px;
+  max-width: 670px;
   margin-top: 80px;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -58,6 +59,7 @@
 
 .loginBtn:hover {
   transform: translateY(-2px);
+  background-color: blue;
 }
 
 .footer {
