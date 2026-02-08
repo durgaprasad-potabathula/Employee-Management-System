@@ -23,7 +23,7 @@ const EmployeeList = ({ employees, onEdit, onDelete, onView }) => {
               <td>{emp.email}</td>
               <td>{emp.phone}</td>
               <td>{emp.role}</td>
-              <td>${emp.salary}</td>
+              <td>{emp.salary}</td>
               <td>
                 <button onClick={() => onView(emp)}>View</button>
                 <button onClick={() => onEdit(emp)}>Update</button>
