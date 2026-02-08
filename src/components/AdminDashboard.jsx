@@ -26,18 +26,18 @@ const AdminDashboard = ({ setIsAuthenticated }) => {
       setEmployees([
         {
           id: 1,
-          name: 'John Doe',
-          email: 'john@example.com',
-          phone: '1234567890',
+          name: 'Arya',
+          email: 'arya@gmail.com',
+          phone: '7854219874',
           role: 'Developer',
           salary: 50000,
         },
         {
           id: 2,
-          name: 'Jane Smith',
-          email: 'jane@example.com',
+          name: 'Raju',
+          email: 'raju@gmail.com.com',
           phone: '9876543210',
-          role: 'Manager',
+          role: 'Tester',
           salary: 60000,
         },
       ]);
