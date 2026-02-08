@@ -1,45 +1,57 @@
-.container {
+/* Center full page */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  background-image: url("/public/user.avif");
+  background-repeat: no-repeat;
+  /* margin-left: 400px; */
+  background-size: contain;
+  background-position: center;
+  background-color: #fcfcfc;
+  background-size: 900px 780px;  /* width height */
+
+}
+
+/* Border box around h1 + buttons */
+.loginBox {
+  border: 3px solid black;   /* BORDER HERE */
+  width: 372px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 224px;
+  margin-left: 45px;
+}
+
+/* Buttons container */
+.options {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 94vh;
+  gap: 15px;
+}
+
+/* Button style */
+.btn {
+  width: 180px;
+  height: 45px;
+  margin: auto;
+  /* border: 2px solid blue; */
   background-color: white;
   color: black;
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-}
-
-.options {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.btn {
-  padding: 15px 30px;
-  background: #4ecdc4;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-  background: #13eb29;
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-  .options {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .btn {
-    padding: 12px 25px;
-    font-size: 16px;
-  }
+  background-color: blue;
+  color: white;
 }
