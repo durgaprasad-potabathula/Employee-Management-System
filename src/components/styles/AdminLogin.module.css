@@ -5,6 +5,11 @@
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background: #f2f4f7;
+  background-image: url("/public/admin.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 700px , 500px; 
+
 }
 
 /* FORM BOX */
@@ -12,15 +17,17 @@
   background: #ffffff;
   color: #333;
   padding: 40px;
-  border-radius: 12px;
+  /* border-radius: 12px; */
 
   /* BORDER ADDED */
-  border: 2px solid #4ecdc4;
+  border: 2px solid;
 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   text-align: center;
+  height: 240px;
+  margin-bottom: 110px;
 }
 
 /* TITLE */
